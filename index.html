@@ -96,7 +96,7 @@
 
             const remainingDays = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
 
-            const totalDaysInMonth = new Date(currentDate.getFullYear(), currentMonth + 1, 1).getDate();
+            const totalDaysInMonth = new Date(currentDate.getFullYear(), currentMonth + 1, 0).getDate();
             const daysPassed = currentDate.getDate();
             const progressPercentage = (daysPassed / totalDaysInMonth) * 100;
 
@@ -175,5 +175,6 @@
         validateSession();
     </script>    
 </body>
+
 
 </html>
